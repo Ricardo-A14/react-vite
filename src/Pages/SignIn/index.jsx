@@ -1,13 +1,11 @@
-
+import Layout from "../../Components/Layout";
 
 const SignIn = () => {
-
   return (
-
-    <div>
+    <Layout>
       <p>Signin</p>
-    </div>
-  )
-}
+    </Layout>
+  );
+};
 
 export default SignIn;

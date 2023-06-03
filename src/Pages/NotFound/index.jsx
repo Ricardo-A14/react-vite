@@ -1,8 +1,10 @@
+import Layout from "../../Components/Layout";
+
 const NotFound = () => {
   return (
-    <div>
+    <Layout>
       <p>Aquí no hay nada, rey.</p>
-    </div>
+    </Layout>
   );
 };
 

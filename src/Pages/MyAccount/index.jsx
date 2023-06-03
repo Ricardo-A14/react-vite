@@ -1,13 +1,11 @@
-
+import Layout from "../../Components/Layout";
 
 const MyAccount = () => {
-
   return (
-
-    <div>
+    <Layout>
       <p>My Account</p>
-    </div>
-  )
-}
+    </Layout>
+  );
+};
 
 export default MyAccount;

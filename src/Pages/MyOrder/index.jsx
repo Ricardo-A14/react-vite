@@ -1,13 +1,11 @@
-
+import Layout from "../../Components/Layout";
 
 const MyOrder = () => {
-
   return (
-
-    <div>
+    <Layout>
       <p>My Order</p>
-    </div>
-  )
-}
+    </Layout>
+  );
+};
 
 export default MyOrder;
