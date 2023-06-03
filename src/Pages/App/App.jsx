@@ -7,6 +7,8 @@ import MyOrders from "../MyOrders";
 import NotFound from "../NotFound";
 import SignIn from "../SignIn";
 
+import Navbar from "../../Components/Navbar";
+
 import "./App.css";
 
 const AppRoutes = () => {
@@ -24,11 +26,10 @@ const AppRoutes = () => {
 
 function App() {
   return (
-    <div className="bg-red-100">
-      <BrowserRouter>
-        <AppRoutes />
-      </BrowserRouter>
-    </div>
+    <BrowserRouter>
+      <AppRoutes />
+      <Navbar />
+    </BrowserRouter>
   );
 }
 
