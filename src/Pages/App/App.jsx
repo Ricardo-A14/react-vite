@@ -9,6 +9,8 @@ import SignIn from "../SignIn";
 
 import Navbar from "../../Components/Navbar";
 
+import { ShoppingCartProvider } from "../../Context";
+
 import "./App.css";
 
 const AppRoutes = () => {
@@ -26,10 +28,12 @@ const AppRoutes = () => {
 
 function App() {
   return (
-    <BrowserRouter>
-      <AppRoutes />
-      <Navbar />
-    </BrowserRouter>
+    <ShoppingCartProvider>
+      <BrowserRouter>
+        <AppRoutes />
+        <Navbar />
+      </BrowserRouter>
+    </ShoppingCartProvider>
   );
 }
 
