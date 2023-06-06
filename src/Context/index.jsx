@@ -6,7 +6,7 @@ const ShoppingCartProvider = ({ children }) => {
   const [count, setCount] = useState(0);
   const [isProductDetaiOpen, setIsProductDetaiOpen] = useState(false);
   const [productToShow, setProductToShow] = useState({});
-  const [cartProducts, setCartProducts] = useState({});
+  const [cartProducts, setCartProducts] = useState([]);
 
   const openProductDetail = () => setIsProductDetaiOpen(true);
   const closeProductDetail = () => setIsProductDetaiOpen(false);
