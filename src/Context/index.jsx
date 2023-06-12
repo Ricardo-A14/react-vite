@@ -23,7 +23,7 @@ const ShoppingCartProvider = ({ children }) => {
 
   const [searchByTitle, setSearchByTitle] = useState("");
 
-  const [searchByCategory, setSearchByCategory] = useState("");
+  const [searchByCategory, setSearchByCategory] = useState(null);
 
   useEffect(() => {
     fetch("https://api.escuelajs.co/api/v1/products")

@@ -19,8 +19,8 @@ const Navbar = () => {
 
         <li>
           <NavLink
-            to="/all"
-            onClick={() => context.setSearchByCategory('all')}
+            to="/"
+            onClick={() => context.setSearchByCategory()}
             className={({ isActive }) => (isActive ? activeStyle : undefined)}
           >
             All
@@ -37,7 +37,7 @@ const Navbar = () => {
           </NavLink>
         </li>
 
-        <li>
+        {/* <li>
           <NavLink
             to="/electronics"
             onClick={() => context.setSearchByCategory("electronics")}
@@ -45,19 +45,19 @@ const Navbar = () => {
           >
             Electronics
           </NavLink>
-        </li>
+        </li> */}
 
         <li>
           <NavLink
             className={({ isActive }) => (isActive ? activeStyle : undefined)}
             to="/furnitures"
-            onClick={() => context.setSearchByCategory("furnitures")}
+            onClick={() => context.setSearchByCategory("furniture")}
           >
             Furnitures
           </NavLink>
         </li>
 
-        <li>
+        {/* <li>
           <NavLink
             className={({ isActive }) => (isActive ? activeStyle : undefined)}
             to="/toys"
@@ -65,7 +65,7 @@ const Navbar = () => {
           >
             Toys
           </NavLink>
-        </li>
+        </li> */}
 
         <li>
           <NavLink
@@ -112,7 +112,7 @@ const Navbar = () => {
 
         <li className="flex items-center">
           <ShoppingBagIcon className="h-6 w-6 text-black" />
-          <div>{context.count}</div>
+          <div>{context.cartProducts.length}</div>
         </li>
       </ul>
     </nav>
